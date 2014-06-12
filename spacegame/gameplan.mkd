@@ -1,0 +1,69 @@
+
+# Big Picture
+
+jQuery
+
+* What to we REALLY do with Javascript
+  * Control HTML
+  * Talk to Server
+
+* The problem: Javascript... is kind of annoying by itself
+* jQuery (and more recently, Underscore) help with that
+* We'll learn jQuery in the context of a space game
+* jQuery PROXIES objects. And represents them as SETS.
+
+* GAME SCORE
+  * Element Creation
+  * Element Insertion
+  * Element Mutation
+  * Element Inspection
+    * Text node (score)
+    * Form element (enemy name)
+
+* ENEMIES
+  * Selector Model
+    * test with buttons and ship
+    * CSS Manipulations
+  * Animation
+  * Queues: Destroy function
+  * Blow up function
+  *   fn(e) { e.animate().queue(function() {this.destroy()})}
+  * Storing and saving data
+  * $.each(arr, cb(i, v)) -- data sensitive computation - destroy less than 0 life
+  * Remember: proxy. How do we get the raw element?
+
+AN ASIDE: WIDGETS
+
+* Objects which encapsulate and "own" some part of the page.
+* Look up two ways HTML -> JS and JS -> HTML
+
+* How do we talk about a widget?
+  * How would you move a spaceship as a turn based game?
+
+TASK: Create an Enemy Widget. Initializes to a random location.
+
+PART 2: EVENTS
+
+* Event Model
+  * Keyboard listen - game.js console out for J and K keys, move ship
+  * Button listen - game.js console out for D and F keys, rotate
+  * stopPropagation and preventDefault - test with Click
+
+PART 3: AJAX
+
+* Talk about request, response
+* Example ajax documentation
+* Promises
+  * jQuery: done, fail, always, then
+* Async deferment problem
+* Sending data from a form
+
+AFTERNOON: SPACEGAME!!
+
+POINTS
+* most creative enemy (enemy must use ajax!) (choose your own flirkr image tag? stock ticker? random tweets?)</li>
+* Spaceship control (mouse? keyboard? buttons?)
+* how to kill enemy? collide in space? shoot something? they randomly die?
+* enemy animation
+
+Be creative, but focus on practicing different skills. Street cred for cool things, but more importantly a diverse set of things rather than obsessing on one.
